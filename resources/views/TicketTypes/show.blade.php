@@ -9,5 +9,7 @@
 <body>
     <h2>ticket type info</h2>
     <p>type: {{$ticketType ->type}}</p>
+    <br>
+    <a href="{{route('ticketType.index')}}">Volver al index</a>
 </body>
 </html>

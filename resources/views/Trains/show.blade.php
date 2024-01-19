@@ -12,5 +12,7 @@
     <p>passengers: {{$train ->passengers}}</p>
     <p>year: {{$train->year}}</p>
     <p>train type: {{$train ->trainType->type}}</p>
+    <br>
+    <a href="{{route('train.index')}}">Volver al index</a>
 </body>
 </html>

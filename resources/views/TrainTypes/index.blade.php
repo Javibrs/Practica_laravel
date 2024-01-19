@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>train type index</title>
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            border: 1px solid black;
+            background-color: lightgreen;
+        }
+        a{
+            text-decoration: none;
+        }
+        table {
+            border:1px solid black;
+            width: 100%;
+        }
+        th, td {
+            width: 25%;
+            text-align: left;
+            vertical-align: top;
+            border: 1px solid #000;
+            border-spacing: 0;
+            padding: 15px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <h1>Train Types</h1>
+    <h1>Menu de navegacion</h1>
+    <ul>
+        <li><a href="{{route('ticketType.index')}}">TicketType</a></li>
+        <li><a href="{{route('ticket.index')}}">Ticket</a></li>
+        <li><a href="{{route('trainType.index')}}">TrainType</a></li>
+        <li><a href="{{route('train.index')}}">Train</a></li>
+    </ul>
+    <br><br>
+    <h2>Train Types</h2>
     <table>
         <thead>
             <tr>
@@ -49,6 +83,5 @@
         <a href="{{route('trainType.create')}}">Create new trainType</a>
     </p>
 
-    
 </body>
 </html>

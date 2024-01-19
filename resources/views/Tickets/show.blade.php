@@ -12,5 +12,7 @@
     <p>Price: {{$ticket ->price}}</p>
     <p>Train name: {{$ticket ->train->name}}</p>
     <p>Ticket type: {{$ticket ->ticketType->type}}</p>
+    <br>
+    <a href="{{route('ticket.index')}}">Volver al index</a>
 </body>
 </html>
